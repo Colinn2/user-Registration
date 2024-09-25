@@ -1,0 +1,70 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('../images/Gradient.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(196, 108, 207, 0.7); /* Semi-transparent purple */
+    border-radius: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff; /* White for contrast */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff; /* White for contrast */
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Light border */
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2); /* Slightly transparent white */
+    color: #ffffff; /* White text color */
+    transition: border-color 0.3s, background 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #ffffff; /* White border on focus */
+    outline: none;
+    background: rgba(255, 255, 255, 0.4); /* Change background on focus */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4e4cc9; /* Green button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
